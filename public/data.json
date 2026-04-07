@@ -48,5 +48,15 @@
     "bowlingStyle": "Slow left-arm orthodox",
     "price": 1600000,
     "playerImg": "https://i.ibb.co.com/yc9cddDB/images.jpg"
-  }
+  },
+  {
+  "playerName": "Liton Das",
+  "playerCountry": "Bangladesh",
+  "playerType": "Wicketkeeper-Batsman",
+  "rating": 88,
+  "battingStyle": "Right-hand bat",
+  "bowlingStyle": "Right-arm offbreak",
+  "price": 1200000,
+  "playerImg": "https://i.ibb.co.com/cSLrNcZJ/images-1.jpg"
+}
 ]
