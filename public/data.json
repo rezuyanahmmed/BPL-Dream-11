@@ -7,7 +7,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
     "price": 1500000,
-    "playerImg": "https://example.com/images/virat-kohli.png"
+    "playerImg": "https://i.ibb.co.com/5xrnLmM9/images.webp"
   },
   {
     "playerName": "Ben Stokes",
@@ -17,7 +17,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "price": 1800000,
-    "playerImg": "https://example.com/images/ben-stokes.png"
+    "playerImg": "https://i.ibb.co.com/9mzVHxBS/84522a0c15e2730e8137ef6162579936.png"
   },
   {
     "playerName": "Babar Azam",
@@ -27,7 +27,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1400000,
-    "playerImg": "https://example.com/images/babar-azam.png"
+    "playerImg": "https://i.ibb.co.com/yBdcRSZ4/1773205615139-babarazamdrasticstep.webp"
   },
   {
     "playerName": "Kane Williamson",
@@ -37,7 +37,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 1350000,
-    "playerImg": "https://example.com/images/kane-williamson.png"
+    "playerImg": "https://i.ibb.co.com/N07w8pZ/3lerc8c8-kane-williamson-625x300-20-May-25.webp"
   },
   {
     "playerName": "Shakib Al Hasan",
@@ -47,6 +47,6 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Slow left-arm orthodox",
     "price": 1600000,
-    "playerImg": "https://example.com/images/shakib-al-hasan.png"
+    "playerImg": "https://i.ibb.co.com/yc9cddDB/images.jpg"
   }
 ]
