@@ -4,6 +4,7 @@ import { useState } from 'react'
 // import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './components/navbar'
+import Banner from './Homepage/Banner/Banner'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
+    <Banner></Banner>
       
     </>
   )
