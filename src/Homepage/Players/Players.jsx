@@ -4,7 +4,7 @@ import AvailablePlayers from '../../components/AvailablePlayers/AvailablePlayers
 const Players = ({playersPromise}) => {
   console.log(playersPromise);
   const players = use(playersPromise);
-  console.log(players);
+  // console.log(players);
   
   
   return (
