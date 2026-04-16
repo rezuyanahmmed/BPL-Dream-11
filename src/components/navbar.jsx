@@ -4,7 +4,7 @@ import dollarImg from "../assets/dollar 1.png"
 const Navbar = () => {
   return (
     <div className='bg-base-100 shadow-sm'>
-      <div className="navbar container mx-auto">
+      <div className="navbar w-11/12 max-w-[80%] mx-auto">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>

@@ -8,7 +8,7 @@ const Players = ({playersPromise}) => {
   
   
   return (
-    <div className='conteiner mx-auto'>
+    <div className='w-11/12 max-w-[80%] mx-auto'>
       players : {players.length}
       <AvailablePlayers players={players}></AvailablePlayers>
     </div>
