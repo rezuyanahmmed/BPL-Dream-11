@@ -34,7 +34,7 @@ const Card = ({ player }) => {
 
 
       </div>
-    </div>;
+    </div>
   );
 };
 
