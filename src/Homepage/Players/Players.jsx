@@ -1,7 +1,7 @@
 import React, { use, useState } from 'react';
 import AvailablePlayers from './AvailablePlayers/AvailablePlayers';
 import SelectedPlayers from './SelectedPlayers/SelectedPlayers';
-const Players = ({ playersPromise, setCoin }) => {
+const Players = ({ playersPromise, setCoin, coin }) => {
   console.log(playersPromise);
   const players = use(playersPromise);
   // console.log(players);
@@ -15,7 +15,7 @@ const Players = ({ playersPromise, setCoin }) => {
   return (
     <div className='w-11/12 max-w-[80%] mx-auto'>
       <div className='flex  justify-between mt-5 mb-5'>
-        {selectedType=== "available" ? <h2 className='font-bold text-2xl'>Available Players</h2> : <h2 className='font-bold text-2xl'>Selected Player (4/6)</h2>} 
+        {selectedType === "available" ? <h2 className='font-bold text-2xl'>Available Players</h2> : <h2 className='font-bold text-2xl'>Selected Player (4/6)</h2>}
 
         <div className='join '>
           <button
@@ -29,7 +29,9 @@ const Players = ({ playersPromise, setCoin }) => {
 
       </div>
 
-      {selectedType === "available" ? <AvailablePlayers players={players} setCoin={setCoin}></AvailablePlayers> : <SelectedPlayers></SelectedPlayers>}
+      {selectedType === "available" ? <AvailablePlayers players={players}
+        setCoin={setCoin} coin={coin}
+      ></AvailablePlayers> : <SelectedPlayers></SelectedPlayers>}
     </div>
   );
 };
