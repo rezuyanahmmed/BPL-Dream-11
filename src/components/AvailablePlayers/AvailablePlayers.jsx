@@ -10,9 +10,9 @@ const AvailablePlayers = ({ players }) => {
   return (
     <div>
 
-      {/* {players.map((player) => {
+      {players.map((player) => {
         return <h2>hi</h2>;
-      })} */}
+      })}
 
 <div className="card bg-base-100 w-96 shadow-sm">
   <figure>

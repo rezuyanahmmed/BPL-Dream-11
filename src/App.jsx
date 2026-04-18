@@ -8,8 +8,9 @@ import Banner from './Homepage/Banner/Banner'
 import Players from './Homepage/Players/Players'
 
 const fetchPlayer = async () => {
-  const res = await fetch("/data.json")
-  return res;
+  const res = await fetch("/data.json");
+  const data = await res.json(); // এই লাইনটি যোগ করতে হবে
+  return data; // 'res' এর বদলে 'data' রিটার্ন করুন
 }
 
 function App() {
