@@ -34,7 +34,7 @@ const AvailablePlayers = ({ players }) => {
               <h2 className='font-bold'>Rating ({player.rating})</h2>
               <div className='flex justify-between items-center mt-3'>
                 <p className='font-bold'>{player.battingStyle}</p>
-                <p>{player.bowlingStyle}</p>
+                <p className='text-right'>{player.bowlingStyle}</p>
               </div>
               <div className='flex justify-between items-center pt-5'>
                 <p className='font-bold'>Price: {player.price}</p>
