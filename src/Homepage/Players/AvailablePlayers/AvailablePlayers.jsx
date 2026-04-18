@@ -12,8 +12,8 @@ const AvailablePlayers = ({ players, setCoin, coin, setSelectedPlayers, selected
     <div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6'>
-        {players.map((player) => {
-          return <Card player={player} setCoin={setCoin} coin={coin} 
+        {players.map((player, ind) => {
+          return <Card key={ind} player={player} setCoin={setCoin} coin={coin} 
           setSelectedPlayers={setSelectedPlayers}
           selectedPlayers={selectedPlayers}></Card>
 
