@@ -9,8 +9,8 @@ import Players from './Homepage/Players/Players'
 
 const fetchPlayer = async () => {
   const res = await fetch("/data.json");
-  const data = await res.json(); // এই লাইনটি যোগ করতে হবে
-  return data; // 'res' এর বদলে 'data' রিটার্ন করুন
+  const data = await res.json(); 
+  return data; 
 }
 
 function App() {

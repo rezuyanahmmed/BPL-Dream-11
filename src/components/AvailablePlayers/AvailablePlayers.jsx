@@ -10,42 +10,44 @@ const AvailablePlayers = ({ players }) => {
   return (
     <div>
 
-      {players.map((player) => {
-        return <h2>hi</h2>;
-      })}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6'>
+        {players.map((player) => {
+          return <div className="card bg-base-100 shadow-sm border-gray-300">
+            <figure>
+              <img className='rounded-[10px]'
+                src={player.playerImg}
+                alt="Shoes" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title"><FaUser />
+                {player.playerName}</h2>
 
-<div className="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title"><FaUser />
-      Card Title</h2>
+              <div className='flex justify-between gap-2'>
+                <div className='flex gap-2 items-center'>
+                  <FaFlag />
+                  <p>{player.playerCountry}</p>
+                </div>
 
-    <div className='flex justify-between gap-2'>
-      <div className='flex gap-2 items-center'>
-        <FaFlag />
-        <p>Bangladesh</p>
+                <button className='btn'>{player.playerType}</button>
+              </div>
+              <div className="divider"></div>
+              <h2 className='font-bold'>Rating ({player.rating})</h2>
+              <div className='flex justify-between items-center mt-3'>
+                <p className='font-bold'>{player.battingStyle}</p>
+                <p>{player.bowlingStyle}</p>
+              </div>
+              <div className='flex justify-between items-center pt-5'>
+                <p className='font-bold'>Price: {player.price}</p>
+                <button className='btn'>Choose Player</button>
+              </div>
+
+
+            </div>
+          </div>;
+        })}
       </div>
 
-      <button className='btn'>All-Rounder</button>
-    </div>
-    <div className="divider"></div>
-    <h2 className='font-bold'>Rating</h2>
-    <div className='flex gap-31'>
-      <p className='font-bold'>Right-Hand-Bat</p>
-      <p>Right-Hand-Bowl</p>
-    </div>
-    <div className='flex pt-5'>
-      <p className='font-bold'>Price: $1500000</p>
-      <button className='btn'>Choose Player</button>
-    </div>
 
-
-  </div>
-</div>
     </div >
   );
 };
