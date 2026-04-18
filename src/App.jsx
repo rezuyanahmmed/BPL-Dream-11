@@ -9,20 +9,21 @@ import Players from './Homepage/Players/Players'
 
 const fetchPlayer = async () => {
   const res = await fetch("/data.json");
-  const data = await res.json(); 
-  return data; 
+  const data = await res.json();
+  return data;
 }
 
 function App() {
   const playersPromise = fetchPlayer()
+  const [coin, setCoin] = useState(500000);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar coin={coin}></Navbar>
       <Banner></Banner>
 
       <Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
-        <Players playersPromise={playersPromise}></Players>
+        <Players playersPromise={playersPromise} setCoin={setCoin} />
       </Suspense>
 
     </>
