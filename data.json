@@ -1,0 +1,62 @@
+[
+  {
+    "playerName": "Virat Kohli",
+    "playerCountry": "India",
+    "playerType": "Batsman",
+    "rating": 94,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 130000,
+    "playerImg": "https://i.ibb.co.com/5xrnLmM9/images.webp"
+  },
+  {
+    "playerName": "Ben Stokes",
+    "playerCountry": "England",
+    "playerType": "All-Rounder",
+    "rating": 92,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": 120000,
+    "playerImg": "https://i.ibb.co.com/9mzVHxBS/84522a0c15e2730e8137ef6162579936.png"
+  },
+  {
+    "playerName": "Babar Azam",
+    "playerCountry": "Pakistan",
+    "playerType": "Batsman",
+    "rating": 91,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 100000,
+    "playerImg": "https://i.ibb.co.com/yBdcRSZ4/1773205615139-babarazamdrasticstep.webp"
+  },
+  {
+    "playerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "playerType": "Batsman",
+    "rating": 90,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 120000,
+    "playerImg": "https://i.ibb.co.com/N07w8pZ/3lerc8c8-kane-williamson-625x300-20-May-25.webp"
+  },
+  {
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerType": "All-Rounder",
+    "rating": 93,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "price": 140000,
+    "playerImg": "https://i.ibb.co.com/yc9cddDB/images.jpg"
+  },
+  {
+  "playerName": "Liton Das",
+  "playerCountry": "Bangladesh",
+  "playerType": "Wicketkeeper-Batsman",
+  "rating": 88,
+  "battingStyle": "Right-hand bat",
+  "bowlingStyle": "Right-arm offbreak",
+  "price": 70000,
+  "playerImg": "https://i.ibb.co.com/cSLrNcZJ/images-1.jpg"
+}
+]
