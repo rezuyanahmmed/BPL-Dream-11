@@ -4,11 +4,17 @@ import { MdDelete } from "react-icons/md";
 
 
 
-const SelectedPlayers = ({ selectedPlayers }) => {
+const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers, setCoin, coin }) => {
   console.log(selectedPlayers);
 
   const handleDeleteSelectedPlayer = (player) => {
-    console.log(player, 'player');
+    console.log(selectedPlayers, 'selectedPlayers');
+
+    const filterdPlayers = selectedPlayers.filter(selectedplayer => selectedplayer.playerName != player.playerName);
+    console.log(filterdPlayers, 'filterdplayers');
+
+    setSelectedPlayers(filterdPlayers);
+    setCoin(coin + player.price);
 
   }
 
@@ -27,8 +33,8 @@ const SelectedPlayers = ({ selectedPlayers }) => {
                   <p className='font-semibold'>{player.playerType}</p>
                 </div>
               </div>
-              <button className='btn text-red-500' 
-              onClick={() => handleDeleteSelectedPlayer(player)}><MdDelete /></button>
+              <button className='btn text-red-500'
+                onClick={() => handleDeleteSelectedPlayer(player)}><MdDelete /></button>
 
             </div>
           );
