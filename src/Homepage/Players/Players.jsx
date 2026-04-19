@@ -17,7 +17,7 @@ const Players = ({ playersPromise, setCoin, coin }) => {
   return (
     <div className='w-11/12 max-w-[80%] mx-auto'>
       <div className='flex  justify-between mt-5 mb-5'>
-        {selectedType === "available" ? <h2 className='font-bold text-2xl'>Available Players</h2> : <h2 className='font-bold text-2xl'>Selected Player (4/6)</h2>}
+        {selectedType === "available" ? <h2 className='font-bold text-2xl'>Available Players</h2> : <h2 className='font-bold text-2xl'>Selected Player ({selectedPlayers.length}/{players.length})</h2>}
 
         <div className='join '>
           <button
@@ -26,7 +26,7 @@ const Players = ({ playersPromise, setCoin, coin }) => {
 
           <button
             onClick={() => setSelectedType("selected")}
-            className={`btn ${selectedType === "selected" ? "bg-[#E7FE29]" : ""} `}>Selected (0)</button>
+            className={`btn ${selectedType === "selected" ? "bg-[#E7FE29]" : ""} `}>Selected ({selectedPlayers.length})</button>
         </div>
 
       </div>
